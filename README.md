@@ -1,5 +1,4 @@
 # Nodejs graphql-service
-## Running
 ### Install
 ```bash
 git checkout remote-control && npm i
