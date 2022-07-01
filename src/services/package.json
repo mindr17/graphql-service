@@ -1,0 +1,33 @@
+{
+  "name": "musicify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "run-s install:artists install:genres install:bands install:tracks install:tracks install:users install:favourites install:albums",
+    "install:artists": "cd artists && npm i",
+    "install:genres": "cd genres && npm i",
+    "install:bands": "cd bands && npm i",
+    "install:tracks": "cd tracks && npm i",
+    "install:users": "cd users && npm i",
+    "install:favourites": "cd favourites && npm i",
+    "install:albums": "cd albums && npm i",
+    "run:artists": "cd artists && npm run start:dev",
+    "run:genres": "cd genres && npm run start:dev",
+    "run:bands": "cd bands && npm run start:dev",
+    "run:tracks": "cd tracks && npm run start:dev",
+    "run:users": "cd users && npm run start:dev",
+    "run:favourites": "cd favourites && npm run start:dev",
+    "run:albums": "cd albums && npm run start:dev",
+    "run:all": "npm run kill && run-p run:artists run:genres run:bands run:tracks run:users run:favourites run:albums",
+    "kill": "kill-port --port 3001,3002,3003,3004,3005,3006,3007"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "kill-port": "^2.0.1"
+  }
+}

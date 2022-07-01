@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
+    "docker": "sudo docker compose up",
     "start": "rm -rf ./dist/ && npx tsc --rootDir src --outDir dist && node ./dist/index.js",
     "start:dev": "npx ts-node-dev --respawn --transpile-only ./src/index.ts",
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/index.ts",

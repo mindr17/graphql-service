@@ -1,9 +1,7 @@
 import 'dotenv/config';
-import { startFront } from './startFront';
+// import { startFront } from './startFront';
 import { WebSocketServer, createWebSocketStream } from 'ws';
-import { commands } from './modules/commands';
-
-startFront();
+// import { commands } from './modules/commands';
 
 const BACK_PORT: string = process.env.BACK_PORT || '8080';
 
